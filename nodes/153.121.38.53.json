@@ -9,6 +9,18 @@
   "postgresql": {
       "password": {
           "postgres": "bar"
+      },
+      "enable_pgdg_yum": true,
+      "version": "9.3",
+      "client": {
+        "packages": ["postgresql93"]
+      },
+      "server": {
+        "packages": ["postgresql93-server"],
+        "service_name": "postgresql-9.3"
+      },
+      "contrib": {
+        "packages": ["postgresql93-libs"]
       }
   }
 }
